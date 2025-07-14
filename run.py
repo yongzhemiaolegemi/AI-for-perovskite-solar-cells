@@ -1,6 +1,6 @@
 import os
 
-os.environ['UNIMOL_WEIGHT_DIR'] ='/share/cxy/release/fixed_hyper_param_random_weight'
+# os.environ['UNIMOL_WEIGHT_DIR'] = <YOUR_MODEL_WEIGHT_DIR>
 
 
 import torch
