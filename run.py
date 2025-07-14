@@ -65,7 +65,7 @@ def predict_and_save(clf, csv_path, file_name, save_path):
         return prediction
     return joblib.load(result_path)
 
-def test_hyper_parms_objective(**params) -> float:
+def run(**params) -> float:
 
     save_path = params['save_dir']
 
@@ -88,4 +88,4 @@ def test_hyper_parms_objective(**params) -> float:
     predict_and_save(clf, test_cleaned_csv_path, 'predicted_test_cleaned_delta_PCE.data', save_path)
 
 
-test_hyper_parms_objective(**params)
+run(**params)
